@@ -1,0 +1,38 @@
+{
+  "name": "movementreminder",
+  "displayName": "Movement Reminder",
+  "version": "4.3.1",
+  "engines": {
+    "vscode": "^1.58.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./build/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "movementreminder.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "movementreminder.MovementReminder",
+        "title": "Movement Reminder"
+      }
+    ],
+    "configuration": {
+      "title": "Movement Reminder",
+      "properties": {}
+    },
+    "keybindings": [
+      {
+        "command": "movementreminder.MovementReminder",
+        "key": "ALT+4"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onCommand:movementreminder.helloWorld",
+    "onCommand:movementreminder.MovementReminder"
+  ]
+}
