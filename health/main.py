@@ -41,6 +41,7 @@ def Start_Eye_Care():
 
 def call(t):
     time.sleep(t)
+    global time_set
     vscode.window.show_warn_message("its been "+time_set+ " minutes since you've been working, please take rest by closing your eyes for 20 secs :)","okay")
     call(t)
 
