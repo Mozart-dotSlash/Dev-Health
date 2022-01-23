@@ -2,7 +2,7 @@ import vscode
 import datetime
 import time
 
-ext = vscode.Extension(name = "eye-care", display_name = "Eye Care", version = "4.2.1")
+ext = vscode.Extension(name = "eye-care", display_name = "Eye Care", version = "4.3.1")
 
 @ext.event
 def on_activate():
